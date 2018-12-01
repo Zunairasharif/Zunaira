@@ -1,0 +1,195 @@
+<html>
+<title>assignment</title>
+<head>
+	<style type="text/css">
+		td{
+			border:solid;
+		}
+		p, label.pi{
+			color:red;
+			background-color: cyan;
+			border-right-style:solid;
+			border-left-style:solid;
+			border-bottom-style:dashed;
+			border-color:red;
+			font-size: 150%;
+		}
+		label.ai{
+			color:white;
+			background-color: magenta;
+		}
+		#lbl1{ 
+			background-color: black;
+		}
+		
+		#warning{
+			background-color: red;
+		}
+	</style>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+      <script type="text/javascript">
+$(document).ready(function(){
+
+      $('#btn').click(function(){
+  	$("#aii").show();
+      	$("#pii").hide();
+
+       });
+
+       $('#bk').click(function(){
+       $("#pii").show();
+       $("#aii").hide();
+       });
+
+       $('#btnn').click(function(){
+  	$("#eii").show();
+      	$("#aii").hide();
+
+       });
+
+        $('#bkk').click(function(){
+  	$("#aii").show();
+      	$("#eii").hide();
+
+       });
+      
+});
+     </script>
+      
+     
+</head>
+<body>
+
+	
+
+<fieldset id="pii"><legend>Personal Information</legend>
+<table><tr><td>
+<label class="pi" id="lbl1">First Name:</label></td><td><input type="text" placeholder="Tayab"></td></tr>
+<tr><td><label class="pi" id="lbl2">Last Name:</label></td><td><input type="text" placeholder="Awan"></td></tr>
+<tr><td><label class="pi" id="lbl3">Date of Birth:</label></td><td><input type="date"></td></tr>
+<tr><td><label class="pi" id="lbl4">Cell #</label></td><td><input type="text" placeholder="+92-333-9533XYZ"></td></tr>
+<tr><td><label class="pi" id="lbl5">Email</label></td><td><input type="text" placeholder="tayab.awan001@ucp.edu.pk"></td></tr>
+<tr><td><label class="pi" id="lbl6">CNIC#</label></td><td><input type="text" placeholder="12345-1234567-8"></td></tr>
+<tr><td><label class="pi" id="lbl7">House#</label></td><td><input type="number"></td></tr>
+<tr><td><label class="pi" id="lbl8">Street#</label></td><td><input type="number"></td></tr>
+<tr><td><label class="pi" id="lbl9">Phase/Block:</label></td><td><input type="text"></td></tr>
+<tr><td>
+<label class="pi" id="lbl10">Area:</label></td><td>
+<select>
+<option value="Johar Town">Johar Town</option>
+<option value="Model Town">Model Town</option>
+<option value="Faisal Town">Faisal Town</option>
+<option value="Wapda Town">Wapda Town</option>
+</select></td></tr>
+<tr><td>
+<label class="pi">City:</label></td><td>
+<select>
+<option value="Lahore">Lahore</option>
+<option value="Multan">Multan</option>
+<option value="Faisal abad">Faisal abad</option>
+</select></td></tr>
+<tr><td><input type="button" value="NEXT" id="btn"></td><td></td></tr>
+</table>
+</fieldset>
+
+
+<fieldset id="aii" hidden><legend>Academic Information</legend>
+<table style="border: dashed">
+	<tr><td style="border: solid">
+	<label class="ai">Degree/Certificate:</label>
+	</td><td>
+	<select>
+		<option value="Matric">Matric</option>
+		<option value="Intermediate">Inter</option>
+	</select>
+	</td></tr>
+	<tr>
+		<td>Obtained Marks</td>
+		<td>
+		<input type="text" placeholder="Obtained Marks">
+		</td></tr>
+	<tr>
+		<td>Total Marks</td>
+		<td>
+			<input type="text" placeholder="Total Marks">
+		</td>
+	</tr>
+
+  <tr><td><input type="button" value="NEXT" id="btnn"></td><td></td></tr>
+  <tr><td><input type="button" value="BACK" id="bk"></td><td></td></tr>
+</table>
+</fieldset>
+
+<fieldset id="eii" hidden>
+
+<legend>Experience Details</legend>
+
+<table>
+<tr>
+<td>
+<label>Job title</label>
+</td>
+<td>
+<input type="text"placeholder="Title">
+</td>
+</tr>
+<tr>
+<td>
+<label>Organization</label>
+</td>
+<td>
+<input type="text"placeholder="Organization">
+</td>
+</tr>
+<tr>
+<td>
+<label>Joining date </label>
+</td>
+<td>
+<input type="date">
+</td>
+</tr>
+<tr>
+<td>
+<label>Leaving date</label>
+</td>
+<td>
+<input type="date">
+</td>
+</tr>
+<tr>
+<td>
+<label>Responsibilities</label>
+</td>
+<td>
+<textarea placeholder="Thoughts"></textarea>
+</td>
+</tr>
+<tr><td><input type="button" value="BACK" id="bkk"></td><td></td></tr>
+</table>
+</fieldset>
+<p>
+Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS 
+Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS 
+Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS
+</p>
+<p id="warning">
+WARNING:WARNING:WARNING:WARNING:WARNING:Welcome
+to the Teacher Services of UCP online.
+Please use the menu given at the top.
+Open LMS 
+
+</p>
+</body>
+</html
